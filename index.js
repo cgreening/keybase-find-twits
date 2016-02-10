@@ -1,7 +1,7 @@
 'use strict';
 
 require('dotenv').config();
-let fetch = require('fetch');
+let fetch = require('node-fetch');
 let cookieFetch = require('fetch-cookie')(fetch);
 let FormData = require('form-data');
 let scrypt = require('scryptsy')
@@ -98,7 +98,7 @@ function lookupTwits(csrfToken, twits) {
 }
 
 function keybaseLogin(username, passphrase) {
-  return cookieFetch('https://keybase.io/_/api/1.0/getsalt.json?email_or_username='+username).then((response) => {
+  return fetch('https://keybase.io/_/api/1.0/getsalt.json?email_or_username='+username).then((response) => {
     if(response.status == 200) {
       return response.json();
     } else {

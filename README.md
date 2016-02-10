@@ -1,4 +1,7 @@
 # keybase_find_twits
+
+Quick and dirty hack.
+
 Looks up people your followers/following from twitter and finds them in keybase.
 
 You'll need a twitter app with a client key and client secret.
@@ -24,6 +27,8 @@ npm install
 # setup env file or set env variables
 node index
 ```
+
+Currently the code will lookup people you follow who follow you back - you can modify this by changing line 153.
 
 # Known issues
 
