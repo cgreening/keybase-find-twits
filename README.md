@@ -1,4 +1,4 @@
-# keybase_find_twits
+# Keybase Find Twits
 
 Quick and dirty hack.
 
