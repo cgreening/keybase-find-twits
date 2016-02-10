@@ -1,0 +1,20 @@
+{
+  "name": "follow_all_twits",
+  "version": "1.0.0",
+  "description": "Follow all the twitter twits you follow on keybase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "dotenv": "^2.0.0",
+    "fetch": "^1.0.0",
+    "form-data": "^0.2.0",
+    "lodash": "^4.2.1",
+    "scryptsy": "^1.2.1",
+    "twit": "^2.2.2"
+  }
+}
